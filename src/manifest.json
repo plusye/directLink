@@ -3,7 +3,7 @@
   "name": "__MSG_extName__",
   "homepage_url": "http://localhost:8080/",
   "description": "A Vue Browser Extension",
-  "default_locale": "en",
+  "default_locale": "zh_CN",
   "permissions": [
     "activeTab",
     "<all_urls>",
@@ -18,8 +18,18 @@
     "scripts": [
       "js/background.js"
     ],
-    "persistent": false
+    "persistent": true
   },
+  "content_scripts": [{
+    "matches": ["http://*.zhihu.com/*",
+      "https://*.zhihu.com/*",
+      "http://*.jianshu.com/*",
+      "https://*.jianshu.com/*",
+      "http://*.docs.qq.com/*",
+      "https://*.docs.qq.com/*"],
+    "js": ["js/content-script.js"],
+    "run_at": "document_end"
+  }],
   "browser_action": {
     "default_popup": "popup.html",
     "default_title": "__MSG_extName__",
