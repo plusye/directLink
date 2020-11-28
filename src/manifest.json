@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "__MSG_extName__",
-  "homepage_url": "http://localhost:8080/",
-  "description": "A Vue Browser Extension",
+  "homepage_url": "https://github.com/plusye/directLink",
+  "description": "一个解决一些中文网站以安全的名义，不让用户直接点开第三方网址的插件。",
   "default_locale": "zh_CN",
   "permissions": [
     "activeTab",

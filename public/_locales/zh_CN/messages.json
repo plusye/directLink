@@ -1,7 +1,7 @@
 {
     "extName": {
-      "message": "链接直达",
-      "description": ""
+      "message": "网址链接直达",
+      "description": "一个解决一些中文网站以安全的名义，不让用户直接点开第三方网址的插件。"
     }
   }
   
